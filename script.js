@@ -20,3 +20,10 @@ for (let i = 0; i < 16 * 16; i++) {
     gridItem.classList.add('grid-item');
     gridContainer.appendChild(gridItem);
 }
+
+const gridItems = document.querySelectorAll('.grid-item');
+        gridItems.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.style.backgroundColor = 'pink';
+            });
+        });
