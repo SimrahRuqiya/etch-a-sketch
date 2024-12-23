@@ -1,3 +1,11 @@
+#heading {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    width: fit-content;
+}
 #grid-container {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
