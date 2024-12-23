@@ -21,9 +21,15 @@ for (let i = 0; i < 16 * 16; i++) {
     gridContainer.appendChild(gridItem);
 }
 
+//chooses color
+const colorPicker = document.getElementById('favcolor');
+
+// add hover effect with dynamic color
 const gridItems = document.querySelectorAll('.grid-item');
-        gridItems.forEach(item => {
-            item.addEventListener('mouseover', () => {
-                item.style.backgroundColor = 'pink';
-            });
-        });
+gridItems.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        // Use the selected color from the color picker
+        const selectedColor = colorPicker.value;
+        item.style.backgroundColor = selectedColor;
+    });
+});
